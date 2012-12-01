@@ -1,0 +1,11 @@
+<div id="game">
+  <% @users.each do |u| %>
+    <div class="player" id="player<%=@users.index(u)%>">
+      <%= u %>          <!-- u.name -->
+      <br>
+      <%= button_to 'Hit!', {:controller => :home, :action => :hit, :id => @users.index(u)}, :remote => true %> <!-- u.name -->
+      <%= button_to 'Stay', {:controller => :home, :action => :stay, :id => @users.index(u)}, :remote => true %> <!-- u.name -->
+    </div>
+  <% end %>
+
+</div>

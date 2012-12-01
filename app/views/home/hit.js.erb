@@ -1,0 +1,12 @@
+player_box = $('#turn').parent();
+player_number = player_box.attr('id')
+player_number = player_number.charAt(player_number.length - 1)
+
+if (<%= @user_id %> == player_number) {
+  $('#turn').remove()
+  if (player_box.next().length==0) {
+    $('#player0').append('<div id="turn">TURN</div>');
+  } else {
+    player_box.next().append('<div id="turn">TURN</div>');
+  }
+}

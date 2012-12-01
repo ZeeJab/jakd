@@ -1,4 +1,10 @@
 Jakd::Application.routes.draw do
+
+  root :to => 'home#index'
+  post '/hit' => 'home#hit'
+  post '/stay' => 'home#stay'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
