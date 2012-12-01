@@ -10,8 +10,8 @@ gem 'pry-rails'
 gem 'rails-footnotes'
 gem 'kaminari'
 gem 'annotate'
+gem 'bcrypt-ruby'
 gem 'deck-of-cards'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
