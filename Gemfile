@@ -10,6 +10,7 @@ gem 'pry-rails'
 gem 'rails-footnotes'
 gem 'kaminari'
 gem 'annotate'
+gem 'deck-of-cards'
 
 
 # Gems used only for assets and not required
