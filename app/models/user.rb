@@ -16,6 +16,5 @@
 #
 
 class User < ActiveRecord::Base
-	
-	belongs_to :hand
+	has_many :kards
 end
