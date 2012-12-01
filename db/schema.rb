@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20121201165001) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "usrename"
+    t.string   "userename"
     t.string   "password_digest"
     t.string   "avatar"
     t.decimal  "balance",         :default => 1000.0
