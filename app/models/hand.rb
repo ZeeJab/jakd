@@ -13,4 +13,5 @@
 
 class Hand < ActiveRecord::Base
 	belongs_to :user
+  has_many :kards
 end

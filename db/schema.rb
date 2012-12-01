@@ -11,13 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121201165001) do
+ActiveRecord::Schema.define(:version => 20121201171138) do
 
   create_table "hands", :force => true do |t|
     t.integer  "user_id"
     t.boolean  "turn"
     t.decimal  "bet_amount"
     t.boolean  "won_lost"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "kards", :force => true do |t|
+    t.integer  "value"
+    t.string   "suit"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
