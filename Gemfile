@@ -11,6 +11,7 @@ gem 'rails-footnotes'
 gem 'kaminari'
 gem 'annotate'
 gem 'deck-of-cards'
+gem 'bcrypt-ruby'
 
 
 # Gems used only for assets and not required
